@@ -1,4 +1,4 @@
-package com.gonzadev.market_dev.persistece.entity;
+package com.gonzadev.market_dev.persistence.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;

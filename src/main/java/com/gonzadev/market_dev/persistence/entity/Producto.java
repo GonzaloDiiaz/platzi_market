@@ -1,4 +1,4 @@
-package com.gonzadev.market_dev.persistece.entity;
+package com.gonzadev.market_dev.persistence.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -35,4 +35,7 @@ public class Producto {
 
     private Boolean estado;
 
+    @ManyToOne
+    @JoinColumn(name = "id_categoria", insertable = false, updatable = false)
+    private Categoria categoria;
 }
